@@ -74,13 +74,13 @@ The following table describes the comparison between some previous stimuli evoke
 
 
 ## References
-[1]	Mindbigdata dataset. http://www.mindbigdata.com/ (2018)
-[2]	Henry, J. Craig. "Electroencephalography: basic principles, clinical applications, and related fields." Neurology 67.11 (2006): 2092-2092. 
-[3]	Bird, Jordan J., et al. "A deep evolutionary approach to bioinspired classifier optimisation for brain-machine interaction." Complexity 2019 (2019).
-[4]	Jolly, Baani Leen Kaur, et al. "Universal EEG encoder for learning diverse intelligent tasks." 2019 IEEE Fifth International Conference on Multimedia Big Data (BigMM). IEEE, 2019. 
-[5]	Khok, Hong Jing, Victor Teck Chang Koh, and Cuntai Guan. "Deep Multi-Task Learning for SSVEP Detection and Visual Response Mapping." 2020 IEEE International Conference on Systems, Man, and Cybernetics (SMC). IEEE, 2020.
-[6]	Bozal Chaves, Alberto. Personalized image classification from EEG signals using Deep Learning. BS thesis. Universitat Politècnica de Catalunya, 2017.
-[7]	Kwon, Yea-Hoon, Sae-Byuk Shin, and Shin-Dug Kim. "Electroencephalography based fusion two-dimensional (2D)-convolution neural networks (CNN) model for emotion recognition system." Sensors 18.5 (2018): 1383.
-[8]	Ha, Kwon-Woo, and Jin-Woo Jeong. "Motor imagery EEG classification using capsule networks." Sensors 19.13 (2019): 2854.
-[9]	Aznan, Nik Khadijah Nik, et al. "Simulating brain signals: Creating synthetic eeg data via neural-based generative models for improved ssvep classification." 2019 International Joint Conference on Neural Networks (IJCNN). IEEE, 2019.
-[10]	Manor, Ran, and Amir B. Geva. "Convolutional neural network for multi-category rapid serial visual presentation BCI." Frontiers in computational neuroscience 9 (2015): 146.
+*	Mindbigdata dataset. http://www.mindbigdata.com/ (2018)
+*	Henry, J. Craig. "Electroencephalography: basic principles, clinical applications, and related fields." Neurology 67.11 (2006): 2092-2092. 
+*	Bird, Jordan J., et al. "A deep evolutionary approach to bioinspired classifier optimisation for brain-machine interaction." Complexity 2019 (2019).
+*	Jolly, Baani Leen Kaur, et al. "Universal EEG encoder for learning diverse intelligent tasks." 2019 IEEE Fifth International Conference on Multimedia Big Data (BigMM). IEEE, 2019. 
+*	Khok, Hong Jing, Victor Teck Chang Koh, and Cuntai Guan. "Deep Multi-Task Learning for SSVEP Detection and Visual Response Mapping." 2020 IEEE International Conference on Systems, Man, and Cybernetics (SMC). IEEE, 2020.
+*	Bozal Chaves, Alberto. Personalized image classification from EEG signals using Deep Learning. BS thesis. Universitat Politècnica de Catalunya, 2017.
+*	Kwon, Yea-Hoon, Sae-Byuk Shin, and Shin-Dug Kim. "Electroencephalography based fusion two-dimensional (2D)-convolution neural networks (CNN) model for emotion recognition system." Sensors 18.5 (2018): 1383.
+*	Ha, Kwon-Woo, and Jin-Woo Jeong. "Motor imagery EEG classification using capsule networks." Sensors 19.13 (2019): 2854.
+*	Aznan, Nik Khadijah Nik, et al. "Simulating brain signals: Creating synthetic eeg data via neural-based generative models for improved ssvep classification." 2019 International Joint Conference on Neural Networks (IJCNN). IEEE, 2019.
+*	Manor, Ran, and Amir B. Geva. "Convolutional neural network for multi-category rapid serial visual presentation BCI." Frontiers in computational neuroscience 9 (2015): 146.
