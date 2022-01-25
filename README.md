@@ -7,7 +7,6 @@ Video:
 
 
 - [EEGClassification](#eeg-classification)
-  * [Prerequisites](#prerequisites)
   * [Files in The Repository](#files-in-the-repository)
   * [Introduction](#introduction)
   * [Dataset Acquisition](#dataset-acquisition) 
@@ -17,18 +16,10 @@ Video:
 
 
 
-## Prerequisites
-|Library         | Version |
-|----------------------|----|
-|`Python`|  `3.5.5 (Anaconda)`|
-|`torch`|  `0.4.1`|
-
-
-
 ## Files in the repository
 |File name         | Purpsoe |
 |----------------------|------|
-|`EEGClassification.ipynb`| main application for training the model|
+|`EEGClassification.ipynb`| main file - Jupiter Notebook format|
 |`utils.py`| utils functions for loading and pre-processing the data|
 
 
