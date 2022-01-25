@@ -1,9 +1,12 @@
 # EEGClassification
 
-Image Classification of EEG signals using PyTorch
+This project proposes a CNN-based model, which is used to classify the visual evoked EEG signal and recognizes the image an individual is seeing at the time of EEG recording procedure. The proposed CNN model was able to classify the inputs extracted from the MindBigData dataset to identify 10 different classes based on the digit that the subject was viewing while the EEG was captured.  
+This is a class project as part of EE046211 - Deep Learning course @ Technion.  
 
-Video:
-[YouTube](https://youtu.be/V5hxXmG1A9U) - https://youtu.be/V5hxXmG1A9U
+<p align="center">
+    <a href="https://www.linkedin.com/in/nitzan-shitrit-9ab896146/">Nitzan Shitrit</a>  •  
+    <a href="https://il.linkedin.com/in/priel-salomon/">Priel Salomon</a>
+</p>
 
 
 - [EEGClassification](#eeg-classification)
@@ -12,6 +15,7 @@ Video:
   * [Dataset Acquisition](#dataset-acquisition) 
   * [Proposed CNN Model](#proposed-cnn-model)
   * [Results](#results)
+  * [Presentation](#presentation)
   * [References](#references)
 
 
@@ -21,6 +25,7 @@ Video:
 |----------------------|------|
 |`EEGClassification.ipynb`| main file - Jupiter Notebook format|
 |`utils.py`| utils functions for loading and pre-processing the data|
+|`images`| Images used for preview in README.md file|
 
 
 
@@ -35,7 +40,7 @@ As a very initial step, we have explored the utilization of CNNs for multi-class
 
 
 ## Dataset Acquisition
-MindBigData (The “MNIST” of Brain Digits) is an open database containing 1,207,293 brain signals of 2s each, captured with the stimulus of seeing a digit (from 0 to 9) and thinking about it. The raw EEG signals were captured 128 Hz sampling rate, so there are approximately 256 (128 × 2 secs) data points for each stimulus image of digit 0–9 [1]. In this project, 6500 trails for each digit image, with each trail containing 256 samples for 14 electrode positions, have been used. Overall, 65,000 samples been used, 75% were utilized for training, 15% for validation and 10% was utilized for testing.
+[MindBigData](http://www.mindbigdata.com/) (The “MNIST” of Brain Digits) is an open database containing 1,207,293 brain signals of 2s each, captured with the stimulus of seeing a digit (from 0 to 9) and thinking about it. The raw EEG signals were captured 128 Hz sampling rate, so there are approximately 256 (128 × 2 secs) data points for each stimulus image of digit 0–9 [1]. In this project, 6500 trails for each digit image, with each trail containing 256 samples for 14 electrode positions, have been used. Overall, 65,000 samples been used, 75% were utilized for training, 15% for validation and 10% was utilized for testing.
 Brain locations:
 Each EEG device capture the signals via different sensors, located in these areas of the brain.
 We used EPOC with 14 channels, as described in the following figure, marked with blue colour.
@@ -70,6 +75,11 @@ The following table describes the comparison between some previous stimuli evoke
 ![alt text](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/graphs.PNG)
 ![alt text](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/table.PNG)
 
+
+
+## Presentation
+- [Recording](https://youtu.be/V5hxXmG1A9U) of in-class project presentation (Hebrew only)
+- Slides can be found [here](https://github.com/NitzanShitrit/EEGClassification/blob/main/slides.pptx)
 
 
 ## References
