@@ -37,7 +37,7 @@ Deep learning-based models have outperformed conventional methodologies that eli
 This report aims at providing a CNN-based framework for classification of visually evoked stimuli. Figure 1 describes the overall workflow of the proposed architecture. 
 As a very initial step, we have explored the utilization of CNNs for multi-classification of EEG signals recorded while a subject is viewing image of digits from 0 to 9 as stimuli. In the second step, the acquired EEG signals are then pre-processed using basic filtering process in order to remove artifacts. The EEG signals are then used as input to the proposed CNN model for a 10-class classification task representing the 10 different digits (0–9). 
 
-![intro](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/intro.png)
+![intro](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/intro.PNG)
 
 
 ## Dataset Acquisition
@@ -46,15 +46,15 @@ Brain locations:
 Each EEG device capture the signals via different sensors, located in these areas of the brain.
 We used EPOC with 14 channels, as described in the following figure, marked with blue colour.
 
-![brain](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/brain.png)
-![signals](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/signals.png)
+![brain](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/brain.PNG)
+![signals](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/signals.PNG)
 
 
 ## Proposed CNN Model
 The network is composed of five convolution blocks and fully connected layers. Each convolution block consists of a convolution layer, a batch normalization, and an exponential linear unit, as shown in the following figure. 
 An illustration of the proposed network is shown below:
 
-![cnn](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/cnn.png)
+![cnn](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/cnn.PNG)
 
 C1 and C2 blocks were designed to extract the spectral representation of the EEG input, as it performs convolution across the time dimension, capturing features from each EEG channel independently from the others.
 C3 block was designed for performing spatial filtering, as it performs convolutions across the channel dimension. The objective of this layer is to learn the weights of all channels at each time sample.
@@ -69,8 +69,8 @@ The acquired average accuracy through proposed CNN architecture for stimuli evok
 The loss graph and confusion matrix of the proposed CNN model is shown below.
 The following table describes the comparison between some previous stimuli evoked EEG classification techniques along with their accuracy results and the associated stimuli that were used for acquiring the EEG signals. 
 
-![graphs](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/graphs.png)
-![table](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/table.png)
+![graphs](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/graphs.PNG)
+![table](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/table.PNG)
 
 
 ## References
