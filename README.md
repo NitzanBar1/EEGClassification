@@ -3,11 +3,10 @@
 Image Classification of EEG signals using PyTorch
 
 Video:
-
 [YouTube](https://youtu.be/V5hxXmG1A9U) - https://youtu.be/V5hxXmG1A9U
 
 
-- [EEGClassification](#EEGClassification)
+- [EEGClassification](#eeg-classification)
   * [Prerequisites](#prerequisites)
   * [Files in The Repository](#files-in-the-repository)
   * [Introduction](#introduction)
@@ -17,11 +16,13 @@ Video:
   * [References](#references)
 
 
+
 ## Prerequisites
 |Library         | Version |
 |----------------------|----|
 |`Python`|  `3.5.5 (Anaconda)`|
 |`torch`|  `0.4.1`|
+
 
 
 ## Files in the repository
@@ -31,13 +32,15 @@ Video:
 |`utils.py`| utils functions for loading and pre-processing the data|
 
 
+
 ## Introduction
 Vision is one of the most significant parts in the human perception framework. When the eyes get visual incitement, neural spikes are delivered to the brain. The interpretation of these neural spikes is becoming an interesting research work in the era of computer vision. Paradigms leveraging stimuli evoked EEG signal have been used to investigate and analyse the complexity of EEG signal for object detection and for classification tasks using machine learning methods. 
 Deep learning-based models have outperformed conventional methodologies that eliminate the manual feature extraction step. Convolutional neural networks (CNNs) specifically have become a famous deep learning-based approach for learning discriminative features for classification tasks. Past experiments at applying CNNs to stimuli evoked EEG signal classification have utilized domain specific feature representations to decrease the required information for classification. 
 This report aims at providing a CNN-based framework for classification of visually evoked stimuli. Figure 1 describes the overall workflow of the proposed architecture. 
 As a very initial step, we have explored the utilization of CNNs for multi-classification of EEG signals recorded while a subject is viewing image of digits from 0 to 9 as stimuli. In the second step, the acquired EEG signals are then pre-processed using basic filtering process in order to remove artifacts. The EEG signals are then used as input to the proposed CNN model for a 10-class classification task representing the 10 different digits (0–9). 
 
-![intro](https://github.com/NitzanShitrit/EEGClassification/blob/master/images/intro.PNG)
+![intro](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/intro.PNG)
+
 
 
 ## Dataset Acquisition
@@ -50,6 +53,7 @@ We used EPOC with 14 channels, as described in the following figure, marked with
 ![alt text](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/signals.PNG)
 
 
+
 ## Proposed CNN Model
 The network is composed of five convolution blocks and fully connected layers. Each convolution block consists of a convolution layer, a batch normalization, and an exponential linear unit, as shown in the following figure. 
 An illustration of the proposed network is shown below:
@@ -57,10 +61,13 @@ An illustration of the proposed network is shown below:
 ![alt text](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/cnn.PNG)
 
 C1 and C2 blocks were designed to extract the spectral representation of the EEG input, as it performs convolution across the time dimension, capturing features from each EEG channel independently from the others.
+
 C3 block was designed for performing spatial filtering, as it performs convolutions across the channel dimension. The objective of this layer is to learn the weights of all channels at each time sample.
+
 C4 and C5 blocks are capturing the temporal patterns in each extracted feature maps.  
 Dropout has been used in deep neural network training as a regularisation technique to reduce the network tendency to overfit during the training process. 
 Therefore, we used it after convolution blocks C3 and C5, with the dropout set to 0.5.
+
 
 
 ## Results
@@ -71,6 +78,7 @@ The following table describes the comparison between some previous stimuli evoke
 
 ![alt text](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/graphs.PNG)
 ![alt text](https://github.com/NitzanShitrit/EEGClassification/blob/main/images/table.PNG)
+
 
 
 ## References
