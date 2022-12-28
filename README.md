@@ -4,7 +4,7 @@ This project proposes a CNN-based model, which is used to classify the visual ev
 This is a class project as part of EE046211 - Deep Learning course @ Technion.  
 
 <p align="center">
-    <a href="https://www.linkedin.com/in/nitzan-shitrit-9ab896146/">Nitzan Shitrit</a>  •  
+    <a href="https://www.linkedin.com/in/nitzan-bar-9ab896146/">Nitzan Bar</a>  •  
     <a href="https://www.linkedin.com/in/priel-salomon-a6782a1b/">Priel Salomon</a>
 </p>
 
